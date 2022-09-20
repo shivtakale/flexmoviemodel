@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ededed;
+    line-height: 1.5;
+    font-family: 'Asap', sans-serif;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+    font-family: 'Asap', sans-serif;
+}
+.img-fluid, 
+.gallary-img img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    height: auto;
+}
+.section-header{
+    color: black;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+/*========Heder CSS===========*/
+.header{
+    background-color: black;
+    color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.site-info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.heading{
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+.site-description{
+    text-align: center;
+    color: #f6d200;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+}
+nav.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #f6d200;
+    flex-direction: column;
+}
+nav.navbar ul li{
+    flex-grow: 1;
+}
+nav.navbar ul li a:link, .navbar ul li a:visited{
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+}
+nav.navbar ul li a:hover, .navbar ul li a:focus, .navbar ul li a:active{
+    color: #f6d200;
+    background-color: black;
+}
+
+
+/*========posts Content CSS=======*/
+.post {
+    background: #fff;
+    margin-bottom: 20px;
+    /* padding: 15px; */
+}
+.section-post{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.post-content {
+    padding: 0px 40px;
+}
+.post-content h2 {
+    background-color: #f6d200;
+    padding: 30px;
+    margin: 0 -40px 0 -40px;
+    text-align: center;
+}
+.post-content p {
+    padding-top: 20px;
+}
+
+
+
+/*========Main Content CSS=======*/
+
+.main-content-area{
+    padding: 20px;
+    /* margin: 0 -15px 0 -15px; */
+}
+.sidebar-right{
+    background-color: #ededed;
+    padding: 20px;
+}
+
+
+/*=============== watch CSS========== */
+.watch-card{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.watch-content{
+    background-color: black;
+    color: #ededed;
+    padding: 30px;
+}
+.watch-content h3{
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+.movie-info{
+    font-weight: bold;
+}
+.movie-info span{
+    margin-right: 20px;
+}
+.movie-info a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+p.movie-story{
+    margin-bottom: 16px;
+}
+/* =========download css============ */
+.download-card{
+    display: flex;
+    flex-direction: column;
+}
+.download-content{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.download-link {
+    padding: 16px 32px;
+    color: #fff !important;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.download-cast{
+    display: flex;
+}
+.download-gener {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+.download-cast h4, 
+.download-gener h4{
+    flex-basis: 20%;
+    font-size: 22px;
+}
+
+.download-cast img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.download-rating{
+    background-color: #f6d200;
+    padding: 16px 32px;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+.download-rating span:first-child{
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: -8px;
+}
+.download-link{
+    font-size: 35px;
+}
+.download-icon{
+    font-size: 25px;
+}
+/*============== Gallary CSS================ */
+.gallary-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+}
+.gallary-img{
+    margin: 0 0 8px 8px;
+    height: 250px;
+    flex-grow: 1;
+}
+.gallary-img img{
+    height: 100%;
+}
+/* 4 * 0 + 1   >> 1
+   4 * 1 + 1   >> 5
+   4 * 2 + 1   >> 9  */
+.gallary-img:nth-child(4n + 1){
+    flex-basis: 250px;
+}
+/* 2,6,10 */
+.gallary-img:nth-child(4n + 2){
+    flex-basis: 325px;
+}
+/* 3,7 */
+.gallary-img:nth-child(4n + 3){
+    flex-basis: 175px;
+}
+/* 4,8 */
+.gallary-img:nth-child(4n + 4){
+    flex-basis: 380px;
+}
+/*=========siedbar CSS=======*/
+
+.widget{
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.widget-content{
+    padding: 10px 20px;
+}
+.sidebar-menu ul{
+    list-style: none;
+}
+.sidebar-menu ul{
+    display: block;
+    padding: 5px 20px;
+    color: #000;
+}
+.sidebar-menu ol{
+    display: block;
+    padding: 5px 20px;
+    color: #000;
+}
+
+
+
+
+/*=========footer CSS=======*/
+.footer {
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+
+
+
+
+/*=========All @media CSS=======*/
+@media all and (min-width: 768px) {
+    post{
+        width: 49%;
+    }
+    .download-content{
+        flex-direction: row;
+    }
+    .download-rating, 
+    .download-link{
+        flex-grow: 1;
+    }
+    .download-info{
+        flex-grow: 2;
+    }
+
+}
+
+@media all and (min-width:1200px) {
+    .content-area{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sidebar-right{
+        /* flex: 0 0 400px; */
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 400px;
+        padding-bottom: 2000px;
+    }
+    .navbar ul{
+        flex-direction: row;
+        text-align: start;
+    }
+    .heading{
+        font-size: 64px;
+    }
+    .post-half {
+        width: 49%;
+    }
+    .post-one-third{
+        width: 33%;
+    }
+    .post-full{
+        width: 100%;
+    }
+    nav.navbar ul{
+        flex-direction: row;
+    }
+    .watch-card{
+        flex-direction: row;
+    }
+    .watch-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .rightImg{
+        order: 1;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+.sidebar-right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.widget{
+    flex-basis: 49%;
+}
+}
